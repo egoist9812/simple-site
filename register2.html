@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src=https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2Fe7f4b0a8018c00001.jpg alt="" width="150px" height="150px">
+    <form action="#" method="get">
+        <fieldset>
+            <legend>회원가입</legend>
+            <table border="1">
+                <tbody>
+                    
+                <tr>
+                    <td>
+                        <p>
+                        <label for="userid">아이디</label>                 
+                        </p>
+                    </td>
+                    <td>
+                        <p>                              
+                        <input type="text"  id="userid" size="16" autofocus oninvalid="this.setCustomValidity ('아이디를 입력하세요')"required>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                        <label for="password">비밀번호</label>
+                    </p> 
+                    <td>                     
+                        <input type="password" id="password" pattern="[A-Za-z0-9]{8,}"oninvalid="this.setCustomValidity ('비밀번호를 입력하세요')"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <P>
+                        <label for="password">비밀번호확인</label>
+                    </P>
+                    </td>
+                    <td>
+                        <P>
+                            <input type="password" id="password" pattern="[A-Za-z0-9]{8,}"oninvalid="this.setCustomValidity ('비밀번호를 입력하세요')"required></td>
+                        </P>                        
+                </tr>
+                <tr>
+                    <td>
+                        <P>
+                            <label for="birth">생년월일</label>
+                        </P>
+                    </td>
+                    <td>
+                        <P>
+                            <input type="date" min="1900-01-01" max="2100-12-31"oninvalid="this.setCustomValidity ('생년월일을 선택하세요')"required>
+                        </P>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="age">나이</label>
+                        </p>
+                    </td>
+                    <td>
+                        <p><input type="number" id="age"oninvalid="this.setCustomValidity ('나이를 입력하세요')"required>
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="phone number">핸드폰번호</label>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <input type="number" id="phone number" pattern="01\d{1}-\d{4}-\d{4}">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="resident registration number">주민등록번호 </label> 
+                        </P>
+                    </td>
+                    <td>
+                        <input type=yy-dd-mm id="resident registration number" maxlength="6" size="8" pattern=\d{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])> -<input type="password" id="password" maxlength="7" size="9" pattern="[1-8]\d{6}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="email">이메일</label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" id="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <P>
+                            <label for="address">주소</label>
+                        </P>
+                    </td>
+                    <td>
+                        <P>
+                            <input type="text" id="address">
+                        </P>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <P>
+                            <label for="radio">개인정보수집 동의</label>
+                            <input type="radio" id="agree" name="agree" checked>
+                                    
+                            <label for="radio">개인정보수집 미동의</label>
+                            <input type="radio" id="agree2"name="agree">             
+                        </P>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center" >
+                    <label for="checkbox">관심분야 선택</label>
+                        
+                    <input type="checkbox" id="choose1">
+                    <label for="choose1">코딩</label>
+                    <input type="checkbox" id="choose2">
+                    <label for="choose2">디자인</label>
+                    <input type="checkbox" id="choose3">
+                    <label for="choose3">취업</label>
+                    <input type="checkbox" id="choose4">
+                    <label for="choose4">기타</label>
+                </td>
+                <tr>
+                    <td colspan="2" >
+                    가입 경로
+                    <input type="text" list="join" name="j">
+                    <datalist id="join">
+                        <option value="blog">블로그</option>
+                        <option value="sns">sns</option>
+                        <option value="search">검색</option>
+                        <option value="etc">기타</option>
+                    </datalist>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="job">직업란</label>
+                        </p>
+                    </td>
+                    <td>
+                        <select name="job" id="">
+                            <optgroup label="학생">
+                            <option value="child">미취학</option>
+                            <option value="emh">초중고등학생</option>
+                            <option value="university">대학생</option>
+                            <option value="graduate scho">대학원</option>
+                        </optgroup>
+                            <optgroup label="일반인">
+                            <option value="Preparing for employment">취준생</option>
+                            <option value="office worker">직장인</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <td colspan="2" style="text-align:center" >
+                    <p>
+                    <input type="submit" value="회원등록"onclick="alert('회원가입축하합니다')">
+                    <input type="reset" value="등록취소" onclick="alert('취소되었습니다')">
+                </p>
+                </td>
+
+                </tbody>
+                
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
