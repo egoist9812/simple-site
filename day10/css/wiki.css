@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+section{width: 700px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    border: 2px solid black;
+}
+
+#section1{
+    border-radius: 10px;
+        border: 2px solid black;
+        background-color: #86e57f;
+        padding: 20px;
+        text-align: center;        
+}
+
+#section3{text-align: center; 
+
+}
+#section4{width: 200px;
+    border: 1px solid #b0afaf;
+}
+
+
+span{padding: 45px;}
+
+.b {
+    font-weight: bold;}
+
+
+
+
