@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+th{width: 200px;
+    border: 1px solid black;
+}
+
+div{width: 200px;
+    height: 300px;
+    
+}
+#usa{
+    width: 190px;
+    height: 200px;
+    
+    background: repeating-linear-gradient(to top,#BB133E,#BB133E 15px,#FFFFFF 15px,#FFFFFF 30px);
+}
+
+#italy{
+    width: 300px;
+    height: 200px;
+    background: repeating-linear-gradient(to right,#008C45,#008C45 100px,#F4F5F0 100px, #F4F5F0 200px,#CD212A 200px,#CD212A 300px);
+}
+#germany{
+    width: 200px;
+    height: 300px;
+    background: repeating-linear-gradient(to top, #FFCC00,#FFCC00 100px,#FF0000 100px,#FF0000 200px,#000000 100px,#000000 300px);
+}
+
+#star{
+    width: 90px;
+    height: 90px;
+    background-image: url(../static/성조기별.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
