@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        
+        nav{
+            width: 1300px;
+            margin: 20px auto;
+        }
+        #nav1>#lang{display: inline;
+            width: 1300px;
+            height :40px;
+            list-style-type: none;
+        }
+        #nav1>#lang>li{
+            float: right;
+            padding-right: 30px;
+        }
+        hr{width: 1300px;
+        }
+        #lang>li>a{
+            text-decoration: none;
+            color:rgb(53, 53, 53);
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        #lang>li>a:hover{
+            text-decoration: underline;
+        }
+        #nav2{width: 1300px;
+            margin: 20px auto;
+        }
+        #nav2 img{
+            display: block;
+            float: left;
+            padding: 20px;
+            margin-right: 80px;
+            
+        }
+        #nav2>#menu1{
+            
+            display: inline;
+            width: 1300px; 
+            
+        }
+        #nav2>#menu1>li{
+            list-style-type: none;
+            float: left;
+            margin: 10px;
+        
+        }
+        #nav2>#menu1>li>a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+
+        transition-property: border-bottom;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+        #nav2>#menu1>li>a:hover{
+
+        border-bottom: 4px solid rgb(232, 232, 5);
+        }
+        #menu2{display: inline;
+            width: 1300px;
+        }
+        #menu2>li{
+        list-style-type: none;
+            margin-bottom: 30px;
+
+        }
+        #menu2>li>a{
+            margin: 10px;
+            text-decoration: none;
+            font-size: 14px;
+        color: black;
+        font-weight: bold;
+        border: 3px solid  rgb(210, 209, 209);
+        background-color: rgb(210, 209, 209);
+        padding: 5px 40px 5px 10px;
+        
+        }
+        #menu2>li>a:hover{
+            color: white;
+            border: 3px solid  rgb(47, 99, 255);
+        background-color: rgb(47, 99, 255);
+        padding: 5px 40px 5px 10px;
+
+        }
+        #menu3>li{
+            list-style-type: square;
+            color: rgb(133, 131, 131);
+            
+        
+        }
+        #menu3>li>a{text-decoration: none;
+            color: rgb(133, 131, 131);
+            font-size: 14px;
+
+        }
+        #menu3>li>a:hover{
+            text-decoration: underline;
+            color: blue;
+            font-size: 14px;
+
+        }
+        #menu1>li:nth-child(1):hover>#menu2{ 
+            display: block;
+            max-height: 800px;}
+
+        #menu4>li{
+            list-style-type: square;
+            color: rgb(133, 131, 131);
+            
+        
+        }
+        #menu4>li>a{text-decoration: none;
+            color: rgb(133, 131, 131);
+            font-size: 14px;
+
+        }
+        #menu4>li>a:hover{
+            text-decoration: underline;
+            color: blue;
+            font-size: 14px;}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav id="nav1">
+        <img src="https://www.heritage.go.kr/images/layout/top_logo.png" alt="">
+        <ul id="lang">
+            
+            <li><a href="#">JAPANESE</a></li>
+            <li><a href="#">CHINESE</a></li>
+            <li><a href="#">ENGLISH</a></li>
+            <li><a href="#">어린이·청소년문화재청</a></li>
+            <li><a href="#"><img src="https://www.cha.go.kr/images/layout/chalogo.png" alt=""width="100px" height="35px"></a></li>
+            </ul>
+            <hr>
+    </nav>
+    
+    <nav id="nav2">
+        <img src="https://www.heritage.go.kr/images/layout/logo.png" alt="">
+        <ul id="menu1">
+            <li><a href="#">문화유산 검색</a>
+
+            <ul id="menu2">
+                <li><a href="#">문화재검색</a>
+                    <ul id="menu3">
+                    <li><a href="#">문화재 검색</a></li>
+                    <li><a href="#">문화재 종목별 검색</a></li>
+                    <li><a href="#">우리지역 문화재</a></li>
+                    <li><a href="#">유형분류</a></li>
+                    <li><a href="#">문화재 안내판 검색</a></li>
+                </ul>
+                </li>
+                <li><a href="#">기록유산 원문</a>
+                    <ul id="menu4">
+                        <li><a href="#">종목별 검색</a></li>
+                        <li><a href="#">유형별 검색</a></li>
+                        <li><a href="#">시대별 검색</a></li>
+                        <li><a href="#">형태별 검색</a></li>
+                        <li><a href="#">시도별 검색</a></li>
+                        <li><a href="#">원문 검색</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+
+            <li><a href="#">궁궐·종묘</a></li>
+            <li><a href="#">조선왕릉</a></li>
+            <li><a href="#">기록유산</a></li>
+            <li><a href="#">유네스코 등재유산</a></li>
+            <li><a href="#">3D 문화유산</a></li>
+            <li><a href="#">문화재청 사진관</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+
+</body>
+</html>
