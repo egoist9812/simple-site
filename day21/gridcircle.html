@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --boxw:400;
+            --boxh:400;
+            --radius:40;
+            --border:1;
+            
+        }
+
+        #container{
+            width: calc(var(--boxw)* 1px) ;
+            height: calc(var(--boxh)* 1px) ;
+            border: calc(var(--border) * 1px) solid black;
+            margin: 30px auto;
+            
+
+        }
+        .c{ width:calc(var(--radius) *  1px);
+            height: calc(var(--radius) * 1px);
+            border: calc(var(--border) * 1px) solid black;
+            border-radius:calc(var(--radius) * 1px);
+            
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="c" style="--dir:0 ;"></div>
+        <div class="c" style="--dir:1 ;"></div>
+        <div class="c" style="--dir:2 ;"></div>
+        <div class="c" style="--dir:3 ;"></div>
+        <div class="c" style="--dir:4 ;"></div>
+        <div class="c" style="--dir:5 ;"></div>
+        
+        
+    </div>
+</body>
+</html>
