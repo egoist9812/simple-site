@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin:250px ;
+    padding: 0 ;}
+
+
+    
+    #six{
+    width: 100px;
+    height: 57.735px;
+    background-color: rgb(0, 255, 217);
+    position: relative;   
+}
+
+#six::before{
+    content: "";
+    width: 0;
+    height: 57.735px;
+    border-top: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid rgb(0, 255, 217);
+    position: absolute;
+    bottom: 57.735px;
+
+
+}
+#six::after{
+    content: "";
+    width: 0;
+    height: 57.735px;
+    border-top: 50px solid rgb(0, 255, 217);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    top:57.735px;
+}
+#five{
+    width: 50px;
+    height: 0px;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid rgba(140, 0, 255, 0.784);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: relative;
+}
+#five::after{
+    content: "";
+    border-bottom: 50px solid rgba(140, 0, 255, 0.784);
+    border-top: 25px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    bottom: 49px;
+    right:-25px;
+
+}
+
+
+</style>
+<body>
+    <div id="six"></div>
+    <div id="five"></div>
+</body>
+</html>
